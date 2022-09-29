@@ -8,8 +8,8 @@ header{
 
 .imagen-letra{
     position: absolute;
-    top: calc(50px);
-    left: calc(80px);
+    top: 50px;
+    left: 80px;
 }
 
 main{
