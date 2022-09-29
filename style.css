@@ -1,0 +1,296 @@
+/* challengeonejuegoahorcado3 */
+
+header{
+    width: 100%;
+    margin: 1em auto;
+    height: 30px;
+}
+
+.imagen-letra{
+    position: absolute;
+    top: calc(50px);
+    left: calc(80px);
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.inicio-botones{
+    display: inherit;
+    width: 940px;
+    margin: 210px auto;
+    /* en etapa de arreglo */
+}
+
+.inicio-botones input{
+    display: block;
+    border-radius: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+.boton-iniciar{
+    width: 18em;
+    height: 6em;
+    margin: 0 auto;
+    margin-top: 0em;
+    background-color: #0A3871;
+    color: white;
+}
+
+.boton-agregar{
+    width: 15em;
+    height: 4em;
+    margin: 2em auto;
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+.boton-iniciar:hover{
+    transition: 0.5s;
+    background: #5882b6;
+    color: black;
+}
+
+.boton-agregar:hover{
+    transition: 0.5s;
+    background: #5882b6;
+    color: white;
+}
+
+/* PAGINA dos INGRESAR PALABRAS */
+
+.palabra-entrante{
+    display: none;
+    width: 940px;
+    margin: 140px auto 0 auto;
+
+}
+
+.entrada-palabra, .aviso, .botones-pagina-dos{
+    width: 600px;
+}
+
+.entrada-palabra{
+    display: block;
+    height: 300px;
+    margin: 0.2em auto;
+
+    background: #F3F5FC;
+    padding: 1em;
+    border-radius: 20px;
+
+    font-size: 1.5em;
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+    border: none;
+    resize: none;
+    text-transform: uppercase;
+}
+
+.aviso{
+    margin: 0.8em auto;
+}
+
+.aviso img, p{
+    display: inline-block;
+}
+
+.botones-pagina-dos, .botones-pagina-tres{
+    margin: 0.8em auto;
+}
+
+.botones-pagina-dos input, .botones-pagina-tres input{
+    margin: 0 2.1em;
+    width: 18em;
+    height: 4em;
+    border-radius: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+.boton-guardar, .boton-nuevo{
+    background: #123b6c;
+    color: white;
+}
+
+.boton-guardar:hover, .boton-nuevo:hover{
+    transition: 0.5s;
+    background: #5882b6;
+    color: black;
+}
+
+.boton-cancelar, .boton-desistir{
+    background: white;
+    color: black;
+}
+
+.boton-cancelar:hover, .boton-desistir:hover{
+    transition: 0.5s;
+    background: #5882b6;
+    color: white;
+}
+
+/* PAGINA tres INGRESAR PALABRAS */
+
+.juego-ahorcado{
+    display: none;
+    width: 940px;
+    position: relative;
+}
+
+.letras-usadas{
+    position: absolute;
+    z-index: 10;
+    left: 200px;
+    top: 20px;
+    height: 300px;
+    width: 180px;
+    border: none;
+    resize: none;
+    padding: 0.2em;
+    font-size: 2em;
+    background-color:#FFF !important;
+}
+
+.mensaje-final{
+    width: 350px;
+    text-align: center;
+}
+
+.texto-finalizacion{
+    width: 580px;
+    z-index: 20;
+    position: absolute;
+    top: 250px;
+    font-size: 3.4em;
+    color: red;
+}
+
+.imagenes-horca-munieco, .juego-letras-espacios, .botones-pagina-tres{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.imagenes-horca-munieco{
+    height: 400px;
+    position: relative;
+    text-align: center;
+}
+
+.imagen-figura-ahorcado{
+    width: 450px;
+    height: 400px;
+
+    background-image: url(Imagenes/figI.png);
+    background-size: 350px 400px;
+    background-repeat: no-repeat;
+    background-position: center ;
+    
+    position: relative;
+    border: none;
+    resize: none;
+    background-color:#FFF !important;
+}
+
+
+.juego-letras-espacios{
+    margin-top: 20px;
+    height: 120px;
+}
+
+.letras-posicion{
+    font-size: 3.5em;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    position: relative;
+    height: 60px;
+}
+
+.letras-posicion p{
+    position: relative;
+    margin: 0 0.18em;
+    width: 40px;
+}
+
+.letra-primera{
+    display: inline-block; 
+}
+.letra-segunda{
+    display: inline-block;
+}
+.letra-tercera{
+    display: inline-block; 
+}
+.letra-cuarta{
+    display: inline-block; 
+}
+.letra-quinta{
+    display: inline-block; 
+}
+.letra-sexta{
+    display: inline-block; 
+}
+.letra-septima{
+    display: inline-block;
+}
+.letra-octava{
+    display: inline-block;
+}
+
+.lineas-posicion{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center
+}
+
+.lineas-posicion img{
+    width: 10.8%;
+    margin: 0 0.2em;
+}
+
+.linea-letra-uno{
+    display: inline-block;
+}
+
+.linea-letra-dos{
+    display: inline-block;
+}
+
+.linea-letra-tres{
+    display: inline-block;
+}
+
+.linea-letra-cuatro{
+    display: inline-block;
+}
+
+.linea-letra-cinco{
+    display: inline-block;
+}
+
+.linea-letra-seis{
+    display: inline-block;
+}
+
+.linea-letra-siete{
+    display: inline-block;
+}
+
+.linea-letra-ocho{
+    display: inline-block; 
+}
+
+.botones-pagina-tres{
+    position: relative;
+    bottom: 10px;
+}
+
+footer{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 2em auto;
+}
+
+/* INICO de disenio RESPONSIVE */

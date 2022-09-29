@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title> Ahorcado </title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts. googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>  
+        <header>
+            <img src="imagenes/Vector.png" class="imagen-letra" alt="Logo Alura, letra incial a">
+        </header>
+
+        <main>
+
+            <div class="inicio-botones">
+
+                <input type="button" value="Iniciar Juego" name="iniciar" class="boton-iniciar" onclick="btnIniciarJuego()">
+
+                <input type="button" value="Agregar Nueva Palabra" name="agregar" class="boton-agregar" onclick="btnAgregarPalabra()">
+
+            </div>
+
+            <div class="palabra-entrante">
+
+                <textarea class="entrada-palabra" placeholder="Ingrese una palabra" maxlength="8" required></textarea>
+
+                <div class="aviso">
+                    <img src="imagenes/Vectorex.png" class="imagen-exclamacion">
+
+                    <p>Máx. de 8 letras. (Una sola palabra)</p>
+                </div>
+                
+                <div class="botones-pagina-dos">
+                    <input type="button" value="Guardar y empezar" name="guardar" class="boton-guardar" onclick="btnGuardarEmpezar()">
+                    
+                    <input type="button" value="Cancelar" name="cancelar" class="boton-cancelar" onclick="btnCancelar()">
+                </div>
+
+            </div>
+
+            <div class="juego-ahorcado">
+
+                <textarea class="letras-usadas" disabled></textarea>
+
+                <div class="mensaje-final">
+                    <p class="texto-finalizacion"> </p>
+                </div>
+
+                <div class="imagenes-horca-munieco">
+
+                    <textarea class="imagen-figura-ahorcado" disabled ></textarea>
+
+                </div>
+
+                <div class="juego-letras-espacios">
+
+                    <div class="letras-posicion">
+
+                        <p class="letra-primera"></p>
+                        <p class="letra-segunda"></p>
+                        <p class="letra-tercera"></p>
+                        <p class="letra-cuarta"></p>
+                        <p class="letra-quinta"></p>
+                        <p class="letra-sexta"></p>
+                        <p class="letra-septima"></p>
+                        <p class="letra-octava"></p>
+
+                    </div>
+
+                    <div class="lineas-posicion">
+                        <img src="imagenes/Line.png" class="linea-letra-uno">
+                        <img src="imagenes/Line.png" class="linea-letra-dos">
+                        <img src="imagenes/Line.png" class="linea-letra-tres">
+                        <img src="imagenes/Line.png" class="linea-letra-cuatro">
+                        <img src="imagenes/Line.png" class="linea-letra-cinco">
+                        <img src="imagenes/Line.png" class="linea-letra-seis">
+                        <img src="imagenes/Line.png" class="linea-letra-siete">
+                        <img src="imagenes/Line.png" class="linea-letra-ocho">
+                    </div>
+
+                </div>
+
+                <div class="botones-pagina-tres">
+                    <input type="button" value="Nuevo Juego" name="nuevo" class="boton-nuevo" onclick="btnJugarNuevo()">
+                    
+                    <input type="button" value="Desistir" name="nuevo" class="boton-desistir" onclick="btnDesistir()">
+                </div>
+
+                <!-- <input onkeydown="onKeyDownHandler(event);"/> -->
+
+            </div>
+
+
+        </main>
+
+        <footer>
+            <p> &copy; 2022 - Creado por <a href="https://www.linkedin.com/in/luisrecinos502gt/"> Luis Recinos </a> </p>
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
