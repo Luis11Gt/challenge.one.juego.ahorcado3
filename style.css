@@ -4,6 +4,7 @@ header{
     width: 100%;
     margin: 1em auto;
     height: 30px;
+    position: relative;
 }
 
 .imagen-letra{
@@ -12,9 +13,16 @@ header{
     left: 80px;
 }
 
+body{
+    position: relative;
+    padding-bottom: 4em;
+    min-height: 85vh;
+}
+
 main{
     width: 940px;
     margin: 0 auto;
+    position: relative;
 }
 
 .inicio-botones{
@@ -287,10 +295,11 @@ main{
 }
 
 footer{
-    display: block;
     width: 100%;
     text-align: center;
-    margin: 2em auto;
+    padding: 1em 0;
+    bottom: 0px;
+    position: absolute;
 }
 
 /* INICO de disenio RESPONSIVE */

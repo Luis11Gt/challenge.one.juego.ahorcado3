@@ -78,7 +78,7 @@ function reiniciarJuego(){
 
 function escogerPalabra() {
     var aleatorio = Math.floor(Math.random()*vocabulario.length);
-    return vocabulario[9];
+    return vocabulario[aleatorio];
 }
 
 function delimitarPosicionLetras(entradaFuncion){
